@@ -24,7 +24,8 @@
     "chalk": "^4.1.0",
     "esm": "^3.2.25",
     "inquirer": "^8.0.0",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "tsc": "^1.20150623.0"
   },
   "repository": {
     "url": "https://github.com/KaneSeries2/BOX"

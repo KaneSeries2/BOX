@@ -25,4 +25,16 @@ export async function createProject(options){
         options.template.toLowerCase()
     );
     options.templateDirectory = templateDir;
+
+    try{
+        await access(templateDir, fs.constants.R_OK);
+    }catch(err){
+        console.error('%s Invalid template name', chalk.red.bold("ERROR"))
+        process.exit(1);
+    }
+
+    console.log("Copy project files");
+    await copyTemplateFiles(options);
+
+    console.log('%s Project ready', chalk.green.bold('DONE'))
 }

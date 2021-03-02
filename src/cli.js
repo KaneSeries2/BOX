@@ -46,9 +46,17 @@ async function promptForMissingOptions(options){
         defualt: false,
     })
     }
+
+    const answers = await inquirer.prompt(questions);
+    return{
+        ... options,
+        template: options.template || answers.template,
+        git: options.git || answers.git,
+    }
 }
 
 export function cli(args){
     let options = parseArgumentsIntoOptions(args); 
+    options = await promptForMissingOptions(options)
     console.log(options);
 }

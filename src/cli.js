@@ -38,6 +38,14 @@ async function promptForMissingOptions(options){
             defualt: defaultTemplate
         })
     }
+    if(!options.git){
+      questions.push({
+        type: 'confirm',
+        name: 'git',
+        message: 'Initialize a git repository?',
+        defualt: false,
+    })
+    }
 }
 
 export function cli(args){

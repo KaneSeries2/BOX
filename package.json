@@ -1,10 +1,10 @@
 {
-  "name": "@overflowproggramer/box",
-  "version": "1.0.0",
+  "name": "yourbox",
+  "version": "1.0.1",
   "description": "A CLI to make files from the command line",
   "main": "src/index.js",
   "bin": {
-    "@overflowproggramer/box": "bin/create-project",
+    "@yourbox/box": "bin/create-project",
     "create-project": "bin/create-project"
   },
   "publishConfig": {

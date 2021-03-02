@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "bin": {
     "@yourbox/box": "bin/create-project",
-    "create-project": "bin/create-project"
+    "box": "bin/create-project"
   },
   "publishConfig": {
     "access": "public"
@@ -21,8 +21,10 @@
   "license": "ISC",
   "dependencies": {
     "arg": "^5.0.0",
+    "chalk": "^4.1.0",
     "esm": "^3.2.25",
-    "inquirer": "^8.0.0"
+    "inquirer": "^8.0.0",
+    "ncp": "^2.0.0"
   },
   "repository": {
     "url": "https://github.com/KaneSeries2/BOX"

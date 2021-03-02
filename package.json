@@ -1,0 +1,26 @@
+{
+  "name": "@overflowproggramer/box",
+  "version": "1.0.0",
+  "description": "A CLI to make files from the command line",
+  "main": "src/index.js",
+  "bin": {
+    "@overflowproggramer/box": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "create-project"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "esm": "^3.2.25"
+  }
+}

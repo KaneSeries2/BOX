@@ -49,6 +49,6 @@ async function promptForMissingOptions(options){
 }
 
 export function cli(args){
-    let options = parseArgumentsIntoOptions(args);
+    let options = parseArgumentsIntoOptions(args); 
     console.log(options);
 }
